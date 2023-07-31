@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Paper Lima Menit</title>
+{% endblock %}
+
+{% block body %}
+<div class="container-contact100">
+    <div class="wrap-contact100">
+        <form class="contact100-form validate-form" action="{{ url_for('result')}}" method="POST">
+            <span class="contact100-form-title">
+                PREDIKSI TINGKAT PRESTASI MAHASISWA
+            </span>
+
+            <div class="wrap-input100 validate-input">
+                <span class="label-input100">Lomba</span>
+                <input class="input100" type="text" placeholder="Masukan jumlah Lomba" name="Lomba" id="Lomba" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" >
+                <span class="label-input100">Organisasi</span>
+                <input class="input100" type="text" placeholder="Masukan Organisasi" name="Organisasi" id="Organisasi" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" >
+                <span class="label-input100">IPS_1</span>
+                <input class="input100" type="text" placeholder="Masukan IPS_1" name="IPS_1" id="IPS_1" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" >
+                <span class="label-input100">IPS_2</span>
+                <input class="input100" type="text" placeholder="Masukan IPS_2" name="IPS_2" id="IPS_2" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" >
+                <span class="label-input100">IPS_3</span>
+                <input class="input100" type="text" placeholder="Masukan IPS_3" name="IPS_3" id="IPS_3" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" >
+                <span class="label-input100">Absensi_smstr_1</span>
+                <input class="input100" type="text" placeholder="Masukan Absensi_smstr_1" name="Absensi_smstr_1" id="Absensi_smstr_1" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" >
+                <span class="label-input100">Absensi_smstr_2</span>
+                <input class="input100" type="text" placeholder="Masukan Absensi_smstr_2" name="Absensi_smstr_2" id="Absensi_smstr_2" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input">
+                <span class="label-input100">Absensi_smstr_3</span>
+                <input class="input100" type="text" placeholder="Masukan Absensi_smstr_3" name="Absensi_smstr_3" id="Absensi_smstr_3" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" >
+                <span class="label-input100">SKS_smstr_1</span>
+                <input class="input100" type="text" placeholder="Masukan SKS_smstr_1" name="SKS_smstr_1" id="SKS_smstr_1" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" >
+                <span class="label-input100">SKS_smstr_2</span>
+                <input class="input100" type="text" placeholder="Masukan SKS_smstr_2" name="SKS_smstr_2" id="SKS_smstr_2" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input">
+                <span class="label-input100">SKS_smstr_3</span>
+                <input class="input100" type="text" placeholder="Masukan SKS_smstr_3" name="SKS_smstr_3" id="SKS_smstr_3" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="container-contact100-form-btn">
+                <div class="wrap-contact100-form-btn">
+                    <div class="contact100-form-bgbtn"></div>
+                    <button class="contact100-form-btn">
+                        <span>
+                            Prediksi
+                            <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+{% endblock %}

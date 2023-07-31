@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Constantia;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+ 
+}
+</style>
+</head>
+<body>
+<table>
+	<tr>
+	 <td>
+<div class="container" style="width: 700px;">
+<br><br>
+<h3>PREDIKSI HASIL PANEN PADI DESA MINANGA</h3>
+<br> 
+    <form action="{{ url_for('result')}}"method="post">
+		<table>
+			<tr>
+				<td width="500px"><label for="Lomba">Lomba</label></td>
+				<td width="4000px"><input type="text" name="Lomba" ></td>		
+			</tr>
+			<tr>
+				<td><label for="Organisasi">Organisasi</label></td>
+				<td width="1000px"><input type="text" name="Organisasi" ></td>
+			</tr>
+			<tr>
+				<td><label for="IPS_1">IPS_1</label></td>
+				<td width="1000px"><input type="text" name="IPS_1" ></td>
+			</tr>
+			<tr>
+				<td><label for="IPS_2">IPS_2</label></td>
+				<td width="1000px"><input type="text" name="IPS_2" ></td>
+			</tr>
+			<tr>
+				<td><label for="IPS_3">IPS_3</label></td>
+				<td width="1000px"><input type="text" name="IPS_3" ></td>
+			</tr>
+			<tr>
+				<td><label for="Absensi_smstr_1">Absensi_smstr_1</label></td>
+				<td width="1000px"><input type="text" name="Absensi_smstr_1" ></td>
+			</tr>
+			<tr>
+				<td><label for="Absensi_smstr_2">Absensi_smstr_2</label></td>
+				<td width="1000px"><input type="text" name="Absensi_smstr_2" ></td>
+			</tr>
+			<tr>
+				<td><label for="Absensi_smstr_3">Absensi_smstr_3</label></td>
+				<td width="1000px"><input type="text" name="Absensi_smstr_3" ></td>
+			</tr>
+			<tr>
+				<td><label for="SKS_smstr_1">SKS_smstr_1</label></td>
+				<td width="1000px"><input type="text" name="SKS_smstr_1" ></td>
+			</tr>
+			<tr>
+				<td><label for="SKS_smstr_2">SKS_smstr_2</label></td>
+				<td width="1000px"><input type="text" name="SKS_smstr_2" ></td>
+			</tr>
+			<tr>
+				<td><label for="SKS_smstr_3">SKS_smstr_3</label></td>
+				<td width="1000px"><input type="text" name="SKS_smstr_3" ></td>
+			</tr>
+		</table>
+		<input type="submit" value="PREDIKSI">
+	</form>
+
+</div>
+		</td>
+		<td >
+		<div class="container" style="width: 700px;" align="top">
+		<h4>Berdasarkan perhitungan inputan dari kriteria maka di bawah adalah hasil prediksi.
+		<h4>{{ result_text }}</h4>
+		</div>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
